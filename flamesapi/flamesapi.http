@@ -1,0 +1,6 @@
+@flamesapi_HostAddress = http://localhost:5217
+
+GET {{flamesapi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
