@@ -24,6 +24,8 @@ namespace flamesapi.Extensions
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IPhotoService, PhotoServices>();
             services.AddScoped<LogUserActivity>();
+            services.AddScoped<ILikeRepository, LikeRepository>();
+            services.AddScoped<IMessageRepository, MessageRepository>();
             services.AddAutoMapper(typeof(AutomapperProfiles).Assembly);
             return services;            
         }
